@@ -227,6 +227,12 @@ nnoremap <leader>ft Vatzf
 " Create dictionary for custom expansions
 set dictionary+=.vim/dict.txt
 
+
+" If non-zero, auto-popup is triggered by key mappings instead of
+" |CursorMovedI| event. This is useful to avoid auto-popup by moving
+" cursor in Insert mode.
+let g:acp_mappingDriven = 1
+
 "Splites
 
 "Opens a vertical split and switches over (\v)
